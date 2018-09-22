@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+    <h1>Web Caesar</h1>
+    <p>Elementary Encryption</p>
+
+  <form action="/home/about" method='POST'>
+    <div>
+      <label>Rotate by:</label>
+      <input type='text' value="0" name="rotate-by"/>
+    </div>
+        <br>
+    <div>
+        <textarea name="user-submitted-text"></textarea>
+    </div>
+    <input type="submit" value="Submit" />
+
+  </form>
+
+{% endblock %}
