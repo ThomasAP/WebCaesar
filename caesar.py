@@ -24,7 +24,7 @@ def rotate_character(char, rot):
     if char not in alpha and char not in alpha.upper():
         en_char += char
     else:
-        en_char += alpha[((alpha_pos + int(rot) % 26))]
+        en_char += alpha[((alpha_pos + int(rot)) % 26)]
 
     if char in alpha.upper():
         en_char = en_char.upper()
